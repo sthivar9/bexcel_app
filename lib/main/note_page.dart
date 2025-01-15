@@ -123,6 +123,7 @@ class _NotePageState extends State<NotePage> {
         onPressed: addNewNote,
         child: Icon(Icons.add),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
 
       //body => StreamBuilder
       body: StreamBuilder(

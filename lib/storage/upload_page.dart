@@ -48,14 +48,19 @@ class _UploadPageState extends State<UploadPage> {
         title: Text("Upload Page"),
       ),
       body: Center(
-        child: Column(
-          children: [
-            _imageFile != null
-                ? Image.file(_imageFile!)
-                : Text("No image selected.."),
-            ElevatedButton(onPressed: pickImage, child: Text("Pick Image")),
-            ElevatedButton(onPressed: uploadImage, child: Text("Upload"))
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              _imageFile != null
+                  ? Image.file(_imageFile!)
+                  : Text("No image selected.."),
+              ElevatedButton(onPressed: pickImage, child: Text("Pick Image")),
+              ElevatedButton(onPressed: uploadImage, child: Text("Upload")),
+              SizedBox(
+                height: 55,
+              )
+            ],
+          ),
         ),
       ),
     );
