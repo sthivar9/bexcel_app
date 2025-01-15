@@ -1,5 +1,6 @@
-import 'package:bexcel/auth/auth_gate.dart';
-import 'package:bexcel/main/note_page.dart';
+//import 'package:bexcel/auth/auth_gate.dart';
+import 'package:bexcel/storage/upload_page.dart';
+//import 'package:bexcel/main/note_page.dart';
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: AuthGate(),
+      home: UploadPage(),
     );
   }
 }
