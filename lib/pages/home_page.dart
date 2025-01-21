@@ -1,5 +1,6 @@
 import 'package:bexcel/main/note_page.dart';
 import 'package:bexcel/pages/profile_page.dart';
+import 'package:bexcel/pages/uploadHome.dart';
 import 'package:bexcel/storage/upload_page.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
@@ -30,7 +31,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         PersistentTabConfig(
-          screen: const UploadPage(),
+          screen: const AddHome(),
           item: ItemConfig(
             icon: Icon(Icons.add),
             title: "Add",
